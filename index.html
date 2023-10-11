@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0;}
+        .header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:dimgray;
+            color: white;
+            padding:0 5rem;
+        }
+        .header a{
+            color:white;
+            padding: 0 .5rem;
+        }
+        .nav-bar li{
+            display: inline;
+            width: 50%;
+        }
+        .section-1{
+            background-color: dimgray;
+            color: white;
+            display: flex;
+        }
+        .section-1 > * {
+            min-width: 0;
+            flex: 1 1 0%;
+        }
+        .section-1 >div {
+            padding:2rem 4rem;
+        }
+        button{
+            padding:.4rem 1.2rem;
+            border-radius: .25rem;
+            border:0;
+            background-color: dodgerblue;
+            color:white;
+        }
+        .section-2{
+            text-align: center;
+        }
+        .frames{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            gap:2rem;
+        }
+        .frames > li {
+            display:flex;
+            flex-direction: column;
+            width:20%;
+            
+        }
+        .frames > li > img{
+            aspect-ratio: 1/1;
+            border: 3px solid dodgerblue;
+            border-radius: .5rem;
+        }
+        .section-3{
+            background-color:peachpuff;
+            padding:5rem 10rem;
+        }
+        .section-3 div:not(.author){
+            font-style: italic;
+        }
+        .author{text-align: right;}
+        .footer{
+            padding:2.5rem 5rem;
+        }
+        .footer > div{
+            padding:2.5rem 5rem;
+            background-color: dodgerblue;
+            color:white;
+            display: flex;
+            border-radius: .5rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer button{
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">Doggi</div>
+            <ul class="nav-bar">
+                <li><a href="">About</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="section-1">
+            <div>
+                <h1>This is a Doggi</h1>
+                <p> Doggi are considered as heckin good bois all over the world. This page is dedicated to these good bois. Enjoy.</p>
+                <button>Sign Up</button>
+            </div>
+            <img src="https://lun-dev.github.io/Landing-Page/images/shib.webp" alt="">
+        </div>
+        <div class="section-2">
+            <h2>Types of Good Bois</h2>
+            <ul class="frames">
+                <li>
+                    <img src="https://lun-dev.github.io/Landing-Page/images/shib-1.webp" alt="">
+                    <p>Best shibs
+                    </p>
+                </li>
+                <li>
+                    <img src="https://lun-dev.github.io/Landing-Page/images/shib-2.webp" alt="">
+                    <p>Shibs party
+
+                    </p>
+                </li>
+                <li>
+                    <img src="https://lun-dev.github.io/Landing-Page/images/shib-3.webp" alt="">
+                    <p>Good boi</p>
+                </li>
+                <li>
+                    <img src="https://lun-dev.github.io/Landing-Page/images/shib-4.webp" alt="">
+                    <p>Hat boi
+
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="section-3">
+            <h2>"If I chew something up, all of the pieces are mine. If I can take it from you, it's mine."</h2>
+            <div class="author">-- Anonymous Doggi</div>
+        </div>
+        <div class="footer">
+            <div>
+                <div>
+                    <h3>Keep it updated with Doggi News!</h3>
+                    <div>Sign up for the latest information right now!</div>
+                </div>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
